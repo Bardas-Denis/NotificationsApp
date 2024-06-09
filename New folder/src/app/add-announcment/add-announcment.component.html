@@ -1,0 +1,35 @@
+<!-- <p>add-announcment works!</p> -->
+<form class="addForm">
+
+    <mat-form-field class="matDesign">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Title" [(ngModel)]="title" name="title" required="">
+      </mat-form-field>
+
+      <mat-form-field class="matDesign">
+        <mat-label>Author</mat-label>
+        <input matInput placeholder="Author" [(ngModel)]="author" name="author">
+      </mat-form-field>
+
+      <mat-form-field class="matDesign">
+        <mat-label>Message</mat-label>
+        <textarea matInput placeholder="message" [(ngModel)]="message" name="message">
+        </textarea>
+      </mat-form-field>
+
+      <mat-form-field class="matDesign">
+        <mat-label>Image URL</mat-label>
+        <textarea matInput placeholder="imageUrl" [(ngModel)]="image_url" name="imageUrl">
+        </textarea>
+      </mat-form-field>
+
+      <mat-form-field class="matDesign">
+        <mat-label>Categories</mat-label>
+        <mat-select [(value)]="categorySelected">
+        <mat-option *ngFor="let categories of listOfCategories" [value]="categories.id">
+          {{categories.name}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+</form>
+<button mat-raised-button color="accent" (click)="printInLog()">Add</button>

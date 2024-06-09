@@ -1,0 +1,16 @@
+<!-- <p>announcements works!</p> -->
+ <!-- 
+    <p>
+        Message '{{message}}' 
+        with title '{{title}}' 
+        was sent by {{author}} 
+    </p>
+-->
+
+<div class="announcement-container">
+    <p class="message"> Message '{{announcement.message}}' </p>
+    <p class="title"> with title '{{announcement.title}}' </p>
+    <p class="author"> {{announcement.author | customPipe}} </p>
+    <p><a href="{{announcement.imageUrl}}" target="_blank">{{announcement.imageUrl}}</a></p>
+    <p>{{announcement.id}}</p>
+</div> 
