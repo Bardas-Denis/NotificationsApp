@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewsApi</name>
+    </assembly>
+    <members>
+        <member name="M:NewsApi.Controllers.AnnouncementController.GetAnnouncements">
+            <summary>
+            This is a method used to get all announcements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.AnnouncementController.GetAnnouncementById(System.Guid)">
+            <summary>
+            This is method used to get announcements by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.AnnouncementController.GetAnnouncementsByCategoryId(System.String)">
+            <summary>
+            This is a method to get announcements by their category 
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.AnnouncementController.CreateAnnouncement(NewsApi.Models.Announcement)">
+            <summary>
+            This is a method used to add an announcement
+            </summary>
+            <param name="announcement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.AnnouncementController.UpdateAnnouncement(NewsApi.Models.Announcement,System.Guid)">
+            <summary>
+            This is a method used to update an announcement
+            </summary>
+            <param name="announcement"></param>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.AnnouncementController.Delete(System.Guid)">
+            <summary>
+            This is a method used to delete an announcement
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.CategoryController.GetCategories">
+            <summary>
+            This is a method used to get all categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.CategoryController.GetCategoryById(System.Guid)">
+            <summary>
+            This is method used to get categories by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.CategoryController.CreateAnnouncement(NewsApi.Models.Category)">
+            <summary>
+            This is a method used to add a category
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.CategoryController.UpdateCategory(NewsApi.Models.Category,System.Guid)">
+            <summary>
+            This is a method used to update a category
+            </summary>
+            <param name="category"></param>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsApi.Controllers.CategoryController.Delete(System.Guid)">
+            <summary>
+            This is a method used to delete a category
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
